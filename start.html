@@ -1,17 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezione HTML</title>
-    <style>
-        label {
-            display: block
-        }
-        </style>
+<html>
+	
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Lezione HTML</title>
+		<style>
+			label {
+				display: block
+			}
+			</style>
 </head>
+
 <body>
-    
+	<form action="#" method="get">
+		<label for="email">
+			Email <br>
+			<input type="email" name="email" id="email" required placeholder="Insert email">
+		</label>
+		<label for="pw">
+			Choose a password <br>
+			<input type="password" name="pw" id="pw" required placeholder="Insert password">
+		</label>
+		<label for="name">
+			First name <br>
+			<input type="text" name="name" id="name" required placeholder="Insert your first name">
+		</label>
+		<label for="lastname">
+			Last name <br>
+			<input type="text" name="lastname" id="lastname" required placeholder="Insert your last name">
+		</label>
+		<label for="birth">
+			Date of Birth <br>
+			<input type="date" name="birth" id="birth" required min="1920-01-01" placeholder="">
+		</label>
+		<label for="phone">
+			Phone number <br>
+			<input type="tel" name="phone" id="phone" required placeholder="Insert your phone number">
+		</label>
+		<label for="address">
+			Address <br>
+			<input type="text" required>
+		</label>
+		<fieldset>
+			<label for="plan">
+				Choose a plan <br>
+				<input type="radio" name="plan" id="plan" required checked> FREE
+				<input type="radio" name="plan" id="plan" > 10€
+				<input type="radio" name="plan" id="plan" > 20€
+				<input type="radio" name="plan" id="plan" > 25€
+			</label>
+			<label for="cb">
+				<input type="checkbox" name="cb" id="cb" checked> I Want Pro Advantages
+			</label>
+			SCREDIT CARD <br>
+			<label for="CARD">
+				<input type="tel" name="cardnum" id="CARD" pattern="[0-9\s]{13,19}" maxlength="19" required placeholder="xxxx xxxx xxxx xxxx">
+				<input type="tel" name="cvc" id="CARD" maxlength="3" required placeholder="CVC"> 
+				<input type="date" name="data" id="CARD" min="-2022-03-01" required>
+			</label>
+		</fieldset>
+		<button type="submit" name="submit" id="submit">SIGN UP</button> 
+	</form>
 </body>
+
 </html>
